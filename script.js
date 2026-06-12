@@ -4,10 +4,9 @@ const score = van.state(0)
 // 2. Elements Configuration
 const app = div({ id: "app" })
 const title = h1("Flat & Procedural")
+function hello(){alert("a")}
+const btn1 = button({ onclick: hello}, "Add Point")
+app.append(btn1)
 app.append(title)
-function handleIncrement() {// 3. Logic (Completely detached from the element declaration)
-  ++score.val
-}
-const incrementBtn = button({ onclick: handleIncrement }, "Add Point")// 4. Layout (Passed as a flat property reference)
-app.append(incrementBtn)
 van.add(document.body, app)// 5. Mount
+
