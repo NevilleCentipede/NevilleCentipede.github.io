@@ -3,10 +3,9 @@ const { div, h1, p, button } = van.tags
 const score = van.state(0)
 // 2. Elements Configuration
 const app = div({ id: "app" })
-const title = h1("Flat & Procedural")
-function hello(){alert("a")}
 const btn1 = button({ onclick: hello}, "Add Point")
+const title = h1({ style: "margin-top: 50px;" },"Flat & Procedural")
+function hello(){alert("a")}
 app.append(btn1)
 app.append(title)
 van.add(document.body, app)// 5. Mount
-
