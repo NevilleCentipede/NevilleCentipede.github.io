@@ -24,17 +24,15 @@ body {
 
 .container {
   display: flex;
-  position: sticky;
   position: absolute;
   top: 0;
 }
 
 .container button {
-  background-color: #000000;
-  
-  margin: 10px;
+  background-color: #7a2dec;
+  margin: 1px;
   padding: 5px;
-  font-size: 24px;
+  font-size: 12px;
   color:rgb(255, 255, 255);
 }
 h1 {
@@ -44,12 +42,12 @@ p {
   color: white;
 }
 button {
-    background-color: #00ba0c;
+    background-color: #7a2dec;
     border: none;
-    padding 15px;
+    padding: 15px;
     width: 150px;
     height: 50px;
 }
 button:hover{
-    background-color: green;
+    background-color: rgb(90, 35, 167);
 }
